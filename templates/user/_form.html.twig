@@ -1,0 +1,15 @@
+
+
+{{ form_start(form, {'attr': {'class': 'form-horizontal'}}) }}
+{{ form_row(form.username, {'attr': {'class': 'form-control', 'style': 'width: 400px;'}}) }}
+    {{ form_row(form.email, {'attr': {'class': 'form-control', 'style': 'width: 400px;'}}) }}
+    {{ form_row(form.password, {'attr': {'class': 'form-control', 'style': 'width: 400px;'}}) }}
+{{ form_row(form.isActive, {'attr': {'class': 'form-check-input'}}) }}
+
+    {{ form_row(form.role, {'attr': {'class': 'form-control', 'style': 'width: 400px;'}}) }}
+
+    <button type="submit" class="btn btn-primary">{{ button_label|default('Save') }}</button>
+{{ form_end(form) }}
+
+
+

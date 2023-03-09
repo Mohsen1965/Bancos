@@ -1,0 +1,15 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}New User{% endblock %}
+
+{% block body %}
+<div class="full-screen-container" style=" margin-left: 300px;margin-right: 30px;">
+<div class="full-screen-container">
+        <h1 class="bold-red-text">Role index</h1>
+</div>
+    <h1>Create new User</h1>
+
+    {{ include('user/_form.html.twig') }}
+
+    <a href="{{ path('app_user_index') }}">back to list</a>
+{% endblock %}
